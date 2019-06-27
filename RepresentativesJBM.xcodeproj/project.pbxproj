@@ -12,6 +12,8 @@
 		A4EA263222C5586A00B8941F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EA263022C5586A00B8941F /* Main.storyboard */; };
 		A4EA263422C5586B00B8941F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EA263322C5586B00B8941F /* Assets.xcassets */; };
 		A4EA263722C5586B00B8941F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EA263522C5586B00B8941F /* LaunchScreen.storyboard */; };
+		A4EA264222C55B7200B8941F /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA264122C55B7200B8941F /* Representative.swift */; };
+		A4EA264422C55DAF00B8941F /* RespresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA264322C55DAF00B8941F /* RespresentativeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A4EA263322C5586B00B8941F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4EA263622C5586B00B8941F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4EA263822C5586B00B8941F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4EA264122C55B7200B8941F /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		A4EA264322C55DAF00B8941F /* RespresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespresentativeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,64 @@
 		A4EA262B22C5586A00B8941F /* RepresentativesJBM */ = {
 			isa = PBXGroup;
 			children = (
+				A4EA264522C55DC200B8941F /* Model */,
+				A4EA264022C55AD500B8941F /* View */,
+				A4EA264622C55DE500B8941F /* Controller */,
+				A4EA263E22C558C500B8941F /* Resources */,
+			);
+			path = RepresentativesJBM;
+			sourceTree = "<group>";
+		};
+		A4EA263E22C558C500B8941F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A4EA262C22C5586A00B8941F /* AppDelegate.swift */,
-				A4EA262E22C5586A00B8941F /* ViewController.swift */,
-				A4EA263022C5586A00B8941F /* Main.storyboard */,
 				A4EA263322C5586B00B8941F /* Assets.xcassets */,
 				A4EA263522C5586B00B8941F /* LaunchScreen.storyboard */,
 				A4EA263822C5586B00B8941F /* Info.plist */,
 			);
-			path = RepresentativesJBM;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4EA263F22C55ACA00B8941F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA262E22C5586A00B8941F /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A4EA264022C55AD500B8941F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA263022C5586A00B8941F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4EA264522C55DC200B8941F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA264122C55B7200B8941F /* Representative.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4EA264622C55DE500B8941F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA263F22C55ACA00B8941F /* ViewController */,
+				A4EA264722C56E3C00B8941F /* ModelController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4EA264722C56E3C00B8941F /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA264322C55DAF00B8941F /* RespresentativeController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +191,8 @@
 			files = (
 				A4EA262F22C5586A00B8941F /* ViewController.swift in Sources */,
 				A4EA262D22C5586A00B8941F /* AppDelegate.swift in Sources */,
+				A4EA264422C55DAF00B8941F /* RespresentativeController.swift in Sources */,
+				A4EA264222C55B7200B8941F /* Representative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
