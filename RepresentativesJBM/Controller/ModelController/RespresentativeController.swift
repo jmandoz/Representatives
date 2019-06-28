@@ -41,6 +41,6 @@ class RepresentativeController {
             } catch {
                 print("error decoding the data: \(error.localizedDescription)")
             }
-        }
+        }.resume()
     }
 }
